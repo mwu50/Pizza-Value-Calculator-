@@ -109,6 +109,10 @@ document.getElementById("result").innerHTML=`
 
 <p><strong>${tuesday?"✅ Tuesday prices applied":"📅 Regular prices applied"}</strong></p>
 
+<p>Estimated appetite: <strong>${effectivePeople}</strong> people.</p>
+
+<p>This recommendation is based on <strong>${people}</strong> people with a <strong>${document.getElementById("hungerValue").innerHTML}</strong> appetite.</p>
+
 <p>Feeds approximately ${best.fed} people.</p>
 `;
 
