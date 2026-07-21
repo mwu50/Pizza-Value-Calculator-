@@ -27,14 +27,37 @@
 
 <h2>How many people?</h2>
 
+<label for="people">👥 Number of People</label>
+
 <input
 id="people"
 type="number"
 min="1"
 placeholder="Enter number of people">
 
+<label for="hunger">
+🍽️ Average Hunger
+<span id="hungerValue">Average</span>
+</label>
+
+<input
+type="range"
+id="hunger"
+min="1"
+max="5"
+value="3"
+oninput="updateHunger()">
+
+<div class="hungerLabels">
+<span>😴 Not Hungry</span>
+<span>🙂</span>
+<span>😋 Average</span>
+<span>🤤 Hungry</span>
+<span>🔥 Starving</span>
+</div>
+
 <button onclick="calculatePizza()">
-Find Best Pizza
+🍕 Find Best Pizza
 </button>
 
 <div id="result">
