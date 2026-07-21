@@ -17,7 +17,19 @@ document.getElementById("hungerValue").innerHTML=text[value];
 function calculatePizza(){
 
 const people=parseInt(document.getElementById("people").value);
+const hunger=parseInt(document.getElementById("hunger").value);
 
+const multipliers={
+1:0.75,
+2:0.9,
+3:1,
+4:1.25,
+5:1.5
+};
+
+const effectivePeople=Math.ceil(
+people*multipliers[hunger]
+);
 if(!people||people<1){
 alert("Enter a valid number of people.");
 return;
