@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pizza Value Calculator</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<header>
+    <h1>🍕 Pizza Value Calculator</h1>
+    <p>Find the cheapest way to feed everyone.</p>
+</header>
+
+<main>
+
+<div class="card">
+
+<h2>How many people?</h2>
+
+<input
+id="people"
+type="number"
+min="1"
+placeholder="Enter number of people">
+
+<button onclick="calculatePizza()">
+Find Best Pizza
+</button>
+
+<div id="result">
+
+<h3>Your Recommendation</h3>
+
+<p>Your result will appear here.</p>
+
+</div>
+
+</div>
+
+<section class="prices">
+
+<div class="price-card">
+
+<h2>Regular Prices</h2>
+
+<p>Small — $5.00</p>
+<p>Large — $9.45</p>
+<p>Family — $13.45</p>
+
+</div>
+
+<div class="price-card">
+
+<h2>Tuesday Prices</h2>
+
+<p>Small — $5.00</p>
+<p>Large — $6.00</p>
+<p>Family — $10.00</p>
+
+</div>
+
+</section>
+
+<section class="about">
+
+<h2>How it works</h2>
+
+<p>
+
+This calculator automatically detects if today is Tuesday.
+If it is, discounted Tuesday prices are used.
+Otherwise normal prices are used.
+
+The calculator compares different pizza combinations and
+recommends the cheapest option for the number of people you enter.
+
+</p>
+
+</section>
+
+</main>
+
+<footer>
+
+Made with ❤️ using HTML, CSS & JavaScript
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
