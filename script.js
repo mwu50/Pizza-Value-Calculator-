@@ -1,3 +1,19 @@
+function updateHunger(){
+
+const value=document.getElementById("hunger").value;
+
+const text=[
+"",
+"Not Hungry",
+"Light",
+"Average",
+"Hungry",
+"Starving"
+];
+
+document.getElementById("hungerValue").innerHTML=text[value];
+
+}
 function calculatePizza(){
 
 const people=parseInt(document.getElementById("people").value);
