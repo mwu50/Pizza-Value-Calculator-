@@ -66,7 +66,7 @@ for(let s=0;s<=10;s++){
 
 const fed=f*4+l*2+s;
 
-if(fed>=people){
+if(fed>=effectivePeople){
 
 const cost=f*(tuesday?10:13.45)+
 l*(tuesday?6:9.45)+
